@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
+      a.navbar-brand(href='#') PC Repair
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsExampleDefaulnavbar-toggler-icont.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li(class=title=='Home' ? 'active' : undefined).nav-item
+            a.nav-link(href='/') Home
+          li(class=title=='about' ? 'active' : undefined).nav-item
+            a.nav-link(href='/about') About
+          li(class=title=='services' ? 'active' : undefined).nav-item
+            a.nav-link(href='/services') Services
+          li(class=title=='contact' ? 'active' : undefined).nav-item
+            a.nav-link(href='/contact') Contact
+    .container
+      block content
+
+    hr
+    footer.page-footer
+      p Pc Repair &copy;2018
+      p
+        | Designed By
+        a(href='https://codepen.io/zack07/') zack07

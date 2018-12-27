@@ -1,0 +1,10 @@
+extends layout
+block content
+  br
+  h1 Services
+  each service, i in services
+    .jumbotron
+      h3 #{service.name}
+      p #{service.description}
+      p
+        | Price Range: #{service.price}
