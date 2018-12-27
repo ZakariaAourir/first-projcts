@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .container
+    br
+    h1.style-text.text-center #{title}
+    br
+    ul.form-group
+      each category, i in categories
+        li.list-group-item
+          a(href='/articles/category/'+category._id) #{category.title}
