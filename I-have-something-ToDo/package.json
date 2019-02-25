@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "bootstrap": "^4.1.3",
+    "bootstrap": "*",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "jquery": "^3.3.1",
